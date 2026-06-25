@@ -17,16 +17,17 @@
 <body>
 
     <h1>Privacy Policy</h1>
-    <p><strong>Last Updated: June 22, 2026</strong></p>
+    <p><strong>Last Updated: June 25, 2026</strong></p>
 
     <p>JKAPPS ("we," "our," or "us") operates the <strong>WORD GRAB</strong> mobile application. This policy details how data is handled by our local game systems and the third-party Google services we utilize.</p>
 
     <h2>1. Third-Party Services & Technical Data</h2>
-    <p>We utilize industry-standard services from Google to ensure game stability and provide advertisements. These services collect <strong>anonymized technical identifiers</strong> but do not have access to your personal game achievements or name:</p>
+    <p>We utilize industry-standard services from Google to ensure game stability, provide advertisements, and manage our global leaderboard. These services collect <strong>anonymized technical identifiers</strong>:</p>
     <ul>
         <li><strong>Google AdMob & UMP:</strong> Collects device identifiers to manage user consent and serve advertisements based on your preferences.</li>
         <li><strong>Firebase Analytics:</strong> Collects <span class="highlight">anonymized telemetry</span> (e.g., app open frequency, round starts). This data is aggregated and does not identify you personally.</li>
         <li><strong>Firebase Crashlytics:</strong> Collects technical logs and stack traces when the app encounters an error to help us provide bug fixes.</li>
+        <li><strong>Firebase Firestore:</strong> Provides the secure cloud database infrastructure to store and retrieve global online leaderboard data.</li>
     </ul>
 
     <h2>2. User Choices and Opt-Outs</h2>
@@ -37,26 +38,27 @@
         <li><strong>Total Opt-Out:</strong> To stop all technical data collection by third-party services, you may uninstall the application.</li>
     </ul>
 
-    <h2>3. Local and Exclusive Storage</h2>
-    <p>The following <strong>Personal Achievement Data</strong> is stored <span class="highlight">locally and exclusively</span> on your device’s internal storage:</p>
+    <h2>3. Data Storage: Local and Online Leaderboards</h2>
+    <p>Depending on your interaction with the game, your achievement data is by stored locally or transmitted to our secure cloud database:</p>
     <ul>
-        <li>Individual high scores and player initials.</li>
-        <li>Daily check-in streak progress.</li>
-        <li>Game session history.</li>
+        <li><strong>Local Storage:</strong> By default, your daily check-in streak progress, game session history, and local high scores are stored <span class="highlight">exclusively on your device’s internal storage</span>. Clearing your app cache or uninstalling the app will permanently delete this local data.</li>
+        <li><strong>Global Online Leaderboard:</strong> If you voluntarily choose to submit your score to the global online leaderboard, your chosen display name and your score will be transmitted to and securely stored on Google Firebase servers. <br><em>Please note:</em> Your submitted display name and score will be publicly visible to all other players. We do not require real names, and we encourage the use of pseudonyms or initials. We reserve the right to remove inappropriate or offensive submitted names to maintain a safe community environment.</li>
     </ul>
-    <p>This specific achievement data is <strong>never transmitted to JKAPPS or any external servers (including Firebase)</strong>. It remains strictly on your device to facilitate the offline leaderboard and streak features. Clearing your app cache or uninstalling the app will permanently delete this data.</p>
 
-    <h2>4. Assets and Licenses</h2>
+    <h2>4. Native Score Sharing</h2>
+    <p>The "Share Score" feature utilizes your device's built-in sharing capabilities (the native OS share sheet). JKAPPS does not track, intercept, or record who you share your score with, the platforms you share to (e.g., text message, social media), or the contents of the shared message.</p>
+
+    <h2>5. Assets and Licenses</h2>
     <p><strong>Audio:</strong> All sound effects in the application are programmatically synthesized and are original content created for this game.</p>
     <p><strong>Dictionaries:</strong> English word lists are provided via open-source projects including <strong>SCOWL</strong>, <strong>Hunspell</strong>, <strong>dwyl</strong>, and the <strong>English Open Word List (EOWL)</strong> under their respective licenses.</p>
 
-    <h2>5. Security</h2>
-    <p>We rely on the security protocols of Google and Firebase to protect any technical data processed by their services. However, no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+    <h2>6. Security</h2>
+    <p>We rely on the security protocols of Google and Firebase to protect any technical and leaderboard data processed by their services. However, no method of transmission over the internet or method of electronic storage is 100% secure.</p>
 
-    <h2>6. Age Verification & State-Specific Compliance (Texas SB 2420)</h2>
+    <h2>7. Age Verification & State-Specific Compliance (Texas SB 2420)</h2>
     <p>To comply with regional regulatory frameworks, including the Texas App Store Accountability Act, this application utilizes Google's native <strong>Age Signals API</strong>. This interface securely passes age verification status and parental consent markers handled at the operating system or account tier directly through the Google Play Store platform. Our local code processes these automated statuses strictly to lock application entry if an explicit denial status is received. JKAPPS does not collect, transmit, or record any personal identity documentation, age milestones, or personal profile details on external databases.</p>
 
-    <h2>7. Contact Us</h2>
+    <h2>8. Contact Us</h2>
     <div class="contact-box">
         <p>If you have any questions regarding this Privacy Policy, please contact us:</p>
         <p>Email: <strong>jkapps.help@gmail.com</strong></p>
